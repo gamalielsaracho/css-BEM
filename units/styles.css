@@ -1,0 +1,70 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	/* rem hace referencia a la raiz del documento, que es el html. */
+	/* y no en su contenendor. */
+
+	/* 1rem = 16px (html). */
+
+	font-size:2.5rem; /*Root em*/
+}
+
+a {
+	/* Todos los links ván a medir el 50% de su contenedor. */
+	/* Contenedor -> H1  32/2 = 16px || 32/1 = 32 */ 
+	font-size:1rem;
+}
+
+span {
+	font-size:1rem;
+}
+
+.sqare {
+	width: 1em;
+	height: 1em;
+	background-color:peru;
+	font-size: 100px;
+}
+
+	.sqare::after {
+		content:'';
+		width: .5em;
+		height: .5em;
+		background-color:red;
+		position: absolute;
+		top: .25em;
+		left: .25em;
+	}
+
+.container {
+	width: 80%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #009688;
+	/* La altura total de la pantalla. */
+	height: 100vh;
+
+	/* con vw, no es afectado por su padre. */
+	width: 25vw; /* El ancho de la pantalla. */
+
+	/* width: 40%; -> su padre mide 80%, medirá mucho más. */
+
+	/* NO esta Muy bueno utilizar, vh y vw en pantallas grandes. */
+}
+
+	li {
+		background-color: #f44336;
+		height: 20vh;
+		border-bottom: 1px solid #c3180c;
+	}
