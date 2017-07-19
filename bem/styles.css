@@ -1,0 +1,62 @@
+ /* B = Block, E = Element, M = Modifier 
+ 	Un bloque puede tener elementos y modificadores. 
+ 	Los ELEMENTOS se separan con __ 
+ 	Los MODIFICADORES se separan con -- 
+
+ BLOQUE persona. 
+.persona { ... }
+	 ELEMENTOS de persona, estos también pueden tener MODIFICADORES.  
+	.persona__brazo--derecho { ... }
+	.persona__pie { ... }
+		.persona__pie--izquierdo { ... }
+
+	 MODIFICADOR de persona. 
+	.persona--mujer { ... }
+	.persona--orienal { ... } */
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.weather-card {
+	background-color: #FF002B;
+	padding: .5em;
+}
+
+	.weather-card__header {
+		margin: 0;
+	}
+
+	.weather-card__date {
+		font-weight: normal;
+		font-size: 12px;
+		font-family: courier;
+		margin: 0 0 .5em 0;
+		border-bottom: 1px solid #8bc34a;
+		display: block;
+	}
+
+	.weather-card__footer {
+		margin: 0;
+		padding: 0;
+		list-style-type: none; 
+	}
+	.temperature::after {
+		content: attr(data-unidad);
+		font-size: 12px;
+		font-family: courier;
+		color: white;
+	}
+
+.center {
+	width: 50%;
+	/* Modifica el margin que tenia weather-card__date. */
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+
+
