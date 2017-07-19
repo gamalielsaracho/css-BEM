@@ -56,6 +56,64 @@ body {
 	
 }
 
+.registro-usuario {
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top: 1em;
+	padding: 0px;
+	width: 40%;
+	font-family: arial;
+}
+
+	.registro-usuario__titulo {
+		margin: .5rem 0 .5rem 0;
+		text-align: center;
+	}
+
+	.registro-usuario__formulario {
+		border: 1px solid black;
+		margin: 0 auto;
+		padding: .5rem;
+		width: 50%;
+	}
+
+	.registro-usuario__formulario__item {
+		display: flex;
+		margin-bottom: .8em;
+		justify-content: center;
+	}
+
+	.registro-usuario__formulario__label {
+		margin-right: .5rem;
+		font-size: 1em;
+		font-family: arial;
+	}
+
+	.registro-usuario__formulario__input {
+		border: 1px solid green;
+		border-radius: .2rem;
+	}
+
+	.registro-usuario__formulario__buttom {
+		background-color: #fff;
+		border: 1px solid #aaa;
+		padding: .2rem;
+		cursor: pointer;
+	}
+
+	.registro-usuario__formulario__buttom:hover {
+		color: red;
+	}
+
+	.registro-usuario__formulario__buttom--notificar {
+		background-color: orange;
+	}
+
+	.registro-usuario__formulario__buttom--notificar:hover {
+		color: blue;
+	}
+
+
 
 
 
